@@ -1,0 +1,116 @@
+.top {
+  border-bottom: 1px solid $border;
+  padding: 0 0 1rem 0;
+  &__social {
+    margin: 0.6rem 0 0 0;
+    &-list {
+      margin: 0 0;
+      padding: 0 0;
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 10px;
+
+        // min-width: 768px;
+        @include md-screen {
+          margin: 0 7px;
+        }
+
+        // min-width: 1200px;
+        @include xl-screen {
+          margin: 0 10px;
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.25rem;
+        }
+      }
+      &--fb {
+        color: $fb !important;
+      }
+      &--tw {
+        color: $tw !important;
+      }
+      &--ins {
+        color: $ins !important;
+      }
+      &--you {
+        color: $you !important;
+      }
+    }
+  }
+  &__location {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0 0 0;
+    &-ul {
+      display: flex;
+      margin: 0 0;
+      padding: 0 0;
+      font-family: $font;
+      &--item {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        padding: 0 1.3rem;
+        &::after {
+          position: relative;
+          content: "";
+          top: 2px;
+          left: 17px;
+          border-right: 1px solid $loc;
+        }
+        a {
+          text-decoration: none;
+          font-size: 0.9rem;
+          color: $loc !important;
+          transition: all 0.2s ease-in;
+          text-transform: capitalize;
+          &:hover {
+            transition: all 0.2s ease-in;
+            color: $icon !important;
+          }
+        }
+      }
+      &--icon {
+        font-size: 1.3rem;
+        margin: -3px 5px 0 0;
+      }
+      &--icon2 {
+        font-size: 1.3rem;
+        margin: -3px 10px 0 0;
+      }
+    }
+    &__drop {
+      margin: 0 0 0 1rem;
+      padding: 0 0 !important;
+      text-transform: uppercase;
+      box-shadow: none !important;
+      outline: 0 !important;
+      font-size: 0.9rem !important;
+      &--list {
+        min-width: 7rem !important;
+        margin: 5px 0 0 -2.4rem !important;
+        li {
+          text-align: center;
+          outline: 0 !important;
+          margin: 0 10px;
+          border-bottom: 1px solid $loc;
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            font-size: 0.9rem;
+            outline: 0 !important;
+            text-transform: uppercase;
+            color: $loc !important;
+            background: transparent !important;
+            &:hover {
+              background: $dropHover !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

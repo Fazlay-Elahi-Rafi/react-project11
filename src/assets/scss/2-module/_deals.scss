@@ -1,0 +1,127 @@
+.deals {
+  margin: 0 0 8rem 0;
+  &__title {
+    font-family: $font;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $loc;
+    margin: 0 0 4rem 0;
+    text-transform: uppercase;
+    position: relative;
+
+    // min-width: 768px;
+    @include md-screen {
+      font-size: 3rem;
+    }
+  }
+  &__card {
+    &:hover &-img {
+      transition: all 0.3s ease-in;
+      transform: scale(1.1);
+    }
+    &-img {
+      transition: all 0.3s ease-in;
+    }
+    &-borderO {
+      border: 1px solid $icon !important;
+    }
+    &-borderT {
+      border: 1px solid $num !important;
+    }
+  }
+  &__hr {
+    color: $link;
+  }
+  &__new {
+    font-family: $font;
+    font-size: 0.9rem;
+    margin: 0 0 -1.6rem 0;
+    position: relative;
+    background: $icon;
+    color: $white;
+    text-transform: capitalize;
+    padding: 2px 6px 0 6px;
+    font-weight: 700;
+    top: 16px;
+    left: 16px;
+    border-radius: 3px;
+  }
+  &__hot {
+    font-family: $font;
+    font-size: 0.9rem;
+    margin: 0 0 -1.6rem 0;
+    position: relative;
+    background: $num;
+    color: $white;
+    text-transform: capitalize;
+    padding: 2px 6px 0 6px;
+    font-weight: 700;
+    top: 16px;
+    left: 16px;
+    border-radius: 3px;
+  }
+  &__linkO {
+    text-decoration: none;
+    font-family: $font;
+    color: $link !important;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  &__linkT {
+    text-decoration: none;
+    color: $loc !important;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: $font;
+    color: $link;
+    font-size: 1rem;
+    margin: 1rem 0 0.6rem 0;
+  }
+  &__price {
+    font-weight: 700;
+    color: $icon;
+    font-family: $font3;
+    font-size: 1.5rem;
+  }
+  &__offer {
+    text-transform: capitalize;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-family: $font;
+    font-weight: 700;
+    color: $link;
+  }
+  &__counter {
+    margin: 0 0;
+    &-entry {
+      background: $icon;
+      border-radius: 8px;
+      width: 4rem;
+      padding: 0.8rem 0;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        width: 4.7rem;
+        padding: 1rem 0;
+      }
+    }
+    &-value {
+      font-family: $font;
+      color: $white;
+    }
+    &-time {
+      font-family: $font;
+      color: $white;
+      font-size: 0.7rem;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

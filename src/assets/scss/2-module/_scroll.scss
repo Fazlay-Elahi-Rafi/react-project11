@@ -1,0 +1,18 @@
+.scroll {
+  z-index: 2;
+  position: fixed;
+  bottom: 2vh;
+  background: $icon;
+  color: $white;
+  right: 2%;
+  width: 2.8rem !important;
+  height: 2.8rem;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 60px;
+  transition: all 0.3s ease-in;
+  &:hover {
+    transition: all 0.3s ease-in;
+    background: #1a84a4;
+  }
+}

@@ -1,0 +1,104 @@
+.premium {
+  background: $C-2;
+  padding: 10rem 0;
+  margin: 0 0 8rem 0;
+  &__body {
+    display: block;
+    background: $white;
+    box-shadow: 2px 4px 11px -2px rgb(0 0 0 / 35%);
+    border-radius: 5px;
+    padding: 3rem 0;
+
+    // min-width: 768px;
+    @include md-screen {
+      display: flex;
+    }
+  }
+  &__offer {
+    font-family: $font2;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: $loc;
+  }
+  &__title {
+    color: $loc;
+    font-family: $font2;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 0.6rem 0 1rem 0;
+
+    // min-width: 768px;
+    @include md-screen {
+      font-size: 1.7rem;
+    }
+  }
+  &__para {
+    color: $loc;
+    font-family: $font2;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+
+    // min-width: 768px;
+    @include md-screen {
+      font-size: 0.85rem;
+    }
+  }
+  &__btn {
+    box-shadow: none !important;
+    outline: 0 !important;
+    font-family: $font;
+    background: $icon !important;
+    color: $white !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    padding: 7px 1.5rem 5px 1.5rem !important;
+    margin: 2rem 0 0 0;
+    text-transform: uppercase;
+    &:hover {
+      background: transparent !important;
+      color: $icon !important;
+      border: 1px solid $icon;
+    }
+  }
+  &__counter {
+    margin: 0 0;
+    &-entry {
+      background: $icon;
+      border-radius: 8px;
+      width: 4rem;
+      padding: 0.8rem 0;
+      margin: 0 0.4rem 0 0;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        width: 5rem;
+        margin: 0 1rem 0 0;
+        padding: 1rem 0;
+      }
+
+      // min-width: 992px;
+      @include lg-screen {
+        margin: 0 1.5rem 0 0;
+      }
+    }
+    &-value {
+      font-family: $font;
+      color: $white;
+      font-family: 1.1rem;
+      font-weight: 700;
+    }
+    &-time {
+      font-weight: 700;
+      font-family: $font;
+      color: $white;
+      font-size: 0.7rem;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.total {
+  margin: 4rem 0;
+  &__title {
+    font-family: $font;
+    color: $loc;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  &__item {
+    font-family: $font;
+    color: $loc;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0 2rem 0 0;
+  }
+  &__price {
+    font-family: $font;
+    color: $loc;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  &__btn {
+    font-family: $font;
+    color: $loc !important;
+    font-size: 1rem !important;
+    border: 1px solid $icon !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-transform: capitalize;
+    padding: 10px 2rem !important;
+    &:hover {
+      background: $icon !important;
+      color: $white !important;
+    }
+  }
+  &__product {
+    border: 1px solid $C-3 !important;
+    &:hover &-img img {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in;
+    }
+    &-img {
+      overflow: hidden;
+      img {
+        transform: scale(1);
+        transition: all 0.3s ease-in;
+
+        height: 28rem;
+        width: 100%;
+
+        // min-width: 768px;
+        @include md-screen {
+          height: 12rem;
+        }
+      }
+    }
+    &-title {
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: $loc;
+      text-transform: uppercase;
+      margin: 0 0 1rem 0;
+    }
+    &-text {
+      font-family: $font;
+      font-size: 1rem;
+      color: $loc;
+      text-transform: capitalize;
+      margin: 0 0 1rem 0;
+    }
+    &-name {
+      color: $loc;
+      font-family: $font;
+      font-size: 1rem;
+      margin: 0 0 1rem 0;
+    }
+    &-price {
+      color: $loc;
+      font-family: $font;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 0 1rem 0;
+    }
+    &-inp {
+      color: $loc;
+      border: 1px solid $C-3;
+      padding: 5px 1.4rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: 0;
+    }
+    &-label {
+      color: $loc;
+      font-family: $font;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0 0;
+
+      //   min-width: 568px;
+      @include xs-screen {
+        margin: 0 9px 0 0;
+      }
+    }
+    &-cancel {
+      color: $num;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      margin: 0 0;
+
+      //   min-width: 568px;
+      @include xs-screen {
+        display: block;
+        margin: 1.9rem 0 -10px 0;
+      }
+    }
+  }
+}

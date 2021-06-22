@@ -1,0 +1,56 @@
+.adds {
+  margin: 0 0 8rem 0;
+  &__link {
+    border: none !important;
+    &-one {
+      text-decoration: none;
+      text-transform: capitalize;
+      &--layer {
+        display: flex;
+        align-items: center;
+        background: rgba(83, 79, 79, 0.3);
+      }
+      &--para {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        color: $white !important;
+        font-family: $font;
+
+        // min-width: 568px;
+        @include iphn-screen {
+          font-size: 1.2rem;
+        }
+      }
+      &--text {
+        font-size: 1.5rem;
+        color: $white !important;
+        font-family: $font;
+        font-weight: 700;
+
+        // min-width: 568px;
+        @include iphn-screen {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    &-two {
+      text-decoration: none;
+      text-transform: capitalize;
+      &--layer {
+        background: rgba(83, 79, 79, 0.4);
+      }
+      &--para {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        color: $white !important;
+        font-family: $font;
+      }
+      &--text {
+        font-size: 1.5rem;
+        color: $white !important;
+        font-family: $font;
+        font-weight: 700;
+      }
+    }
+  }
+}

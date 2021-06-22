@@ -1,0 +1,104 @@
+.bottom {
+  margin: 2rem 0 3rem 0;
+
+  //   min-width: 768px;
+  @include md-screen {
+    margin: 2.5rem 0 0 0;
+  }
+  &__inp {
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: 1px solid $border !important;
+    border-radius: 3px 0 0 3px !important;
+  }
+  &__search {
+    box-shadow: none !important;
+    outline: 0 !important;
+    background: $icon !important;
+    color: $white !important;
+    border-radius: 0 3px 3px 0 !important;
+    padding: 0 10px 3px 10px !important;
+  }
+  &__user {
+    text-decoration: none;
+    &-icon {
+      color: $white;
+      font-size: 1.2rem;
+      margin: 0 1rem 0 0;
+
+      // min-width: 768px;
+      @include md-screen {
+        color: $loc !important;
+      }
+
+      // min-width: 992px;
+      @include lg-screen {
+        font-size: 1.5rem;
+      }
+    }
+    &-btn {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-family: $font;
+      text-transform: capitalize;
+      box-shadow: none !important;
+      outline: 0 !important;
+      font-size: 0.9rem !important;
+
+      color: $white !important;
+
+      // min-width: 768px;
+      @include md-screen {
+        color: $loc !important;
+      }
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        font-size: 1rem !important;
+      }
+      &--list {
+        padding: 6px 0 !important;
+        min-width: 10rem !important;
+        margin: 0 0 0 1.6rem !important;
+        li {
+          text-align: center;
+          a {
+            font-size: 0.9rem;
+            outline: 0 !important;
+            text-transform: uppercase;
+            color: $loc !important;
+            background: transparent !important;
+            &:hover {
+              background: $dropHover !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__cart {
+    text-decoration: none;
+    display: flex;
+    margin: 0 1.3rem 0 0;
+
+    // min-width: 768px;
+    @include md-screen {
+      margin: 0 0;
+    }
+    &-icon {
+      font-size: 1.8rem;
+      color: $icon !important;
+    }
+    &-num {
+      background: $num;
+      color: $white;
+      border-radius: 50px;
+      padding: 0px 0 0 8px;
+      transform: translate(-9px, -8px);
+      font-size: 0.9rem;
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

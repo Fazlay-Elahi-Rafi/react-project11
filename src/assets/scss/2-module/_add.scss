@@ -1,0 +1,133 @@
+.add {
+  margin: 0 0;
+  background: $bg-1 !important;
+  &__img {
+    position: relative;
+    img {
+      opacity: 0.7;
+    }
+  }
+  &__layer {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 1rem 0 0 0;
+  }
+  &__sub {
+    position: absolute;
+    z-index: 11;
+    top: 25%;
+    left: 3rem;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      left: 5rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-family: $font;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0 0;
+  }
+  &__offer {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: $font;
+    color: $white;
+    display: block;
+    margin: 0.5rem 0 0.8rem 0;
+  }
+  &__btn {
+    box-shadow: none !important;
+    outline: 0 !important;
+    color: $loc !important;
+    font-family: $font;
+    background: $white !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    padding: 5px 2rem !important;
+    border-radius: 3px !important;
+  }
+
+  &__list {
+    margin: 0 0;
+    padding: 0 0;
+
+    // min-width: 992px;
+    @include lg-screen {
+      margin: 0 0 0 4rem;
+    }
+
+    // min-width: 1200px;
+    @include xl-screen {
+      margin: 0 0;
+    }
+    li {
+      list-style: none;
+    }
+    &-btn {
+      box-shadow: none !important;
+      outline: 0 !important;
+      color: $loc !important;
+      font-family: $font;
+      font-size: 0.9rem !important;
+      text-transform: uppercase;
+      position: relative;
+      transition: all 0.4s ease !important;
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        content: "";
+        width: 0;
+        height: 1px;
+        background-color: $icon;
+        transition: all 0.4s ease;
+      }
+      &:hover {
+        padding-left: 23px;
+        transition: all 0.4s ease;
+        color: $icon !important;
+        &::before {
+          width: 20px;
+        }
+      }
+    }
+    &-active {
+      box-shadow: none !important;
+      outline: 0 !important;
+      font-family: $font;
+      font-size: 0.9rem !important;
+      text-transform: uppercase;
+      position: relative;
+
+      padding-left: 23px !important;
+      color: $icon !important;
+      transition: all 0.4s ease !important;
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: $icon;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+  &__show {
+    position: relative;
+    transform: rotateY(0deg);
+    transition: all 0.3s ease-in;
+  }
+  &__hide {
+    position: fixed;
+    transform: rotateY(180deg);
+    transition: all 0.3s ease-in;
+  }
+}

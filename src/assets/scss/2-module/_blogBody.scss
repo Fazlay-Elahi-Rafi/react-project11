@@ -1,0 +1,308 @@
+#root {
+  overflow: hidden;
+}
+
+.body {
+  margin: 0rem 0;
+  &__slider {
+    &-layer {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(transparent, rgba(22, 22, 22, 0.9));
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        align-items: flex-end;
+        padding: 0 0rem 3rem 2rem !important;
+      }
+
+      //   min-width: 768px;
+      @include md-screen {
+        padding: 0 0rem 2rem 2rem !important;
+      }
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        padding: 0 0rem 4rem 3rem !important;
+      }
+    }
+    &-travel {
+      font-family: $font;
+      font-size: 0.7rem;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.8rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 1rem;
+      }
+    }
+    &-title {
+      text-decoration: none;
+      color: $white !important;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 1.5rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 2rem;
+      }
+    }
+    &-date {
+      color: $white;
+      font-size: 0.6rem;
+      font-family: $font;
+      text-transform: uppercase;
+      border-right: 2px solid $white;
+      margin: 0 1rem 0 0;
+      padding: 0 1rem 0 0;
+      font-weight: 700;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.7rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 0.8rem;
+      }
+    }
+    &-name {
+      color: $white;
+      font-size: 0.6rem;
+      font-family: $font;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.7rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 0.8rem;
+      }
+    }
+    &-icon {
+      color: $white;
+      font-size: 0.7rem;
+      margin: 0px 6px 0 0;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        margin: -2px 6px 0 0;
+        font-size: 0.8rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 1rem;
+        margin: -5px 6px 0 0;
+      }
+    }
+  }
+  &__paginat {
+    border: 1px solid #6d6d6d !important;
+    color: #6d6d6d !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+    border-radius: 3px !important;
+    padding: 8px 16px !important;
+    font-size: 1rem !important;
+    margin: 0 5px;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: $white !important;
+      background-image: linear-gradient(to right, #ee7560, #ff5858) !important;
+      border: 1px solid transparent !important;
+      transition: all 0.2s ease-in;
+    }
+    &-active {
+      color: $white !important;
+      background-image: linear-gradient(to right, #ee7560, #ff5858) !important;
+      border: 1px solid transparent !important;
+    }
+    &-arrow {
+      padding: 8px 13px 8px 13px !important;
+      border: 1px solid #6d6d6d !important;
+      color: #6d6d6d !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      outline: 0 !important;
+      border-radius: 20px 0 0 20px !important;
+      transition: all 0.2s ease-in;
+      &:hover {
+        transition: all 0.2s ease-in;
+        color: $white !important;
+        background-image: linear-gradient(
+          to right,
+          #ee7560,
+          #ff5858
+        ) !important;
+        border: 1px solid transparent !important;
+      }
+      &:last-child {
+        border-radius: 0px 20px 20px 0px !important;
+      }
+    }
+    &-icon {
+      margin: -3px 0 0 0;
+    }
+  }
+  &__blog {
+    margin: 0 0;
+
+    &:hover &-img img {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in;
+    }
+    &-img {
+      overflow: hidden;
+      img {
+        transition: all 0.3s ease-in;
+        transform: scale(1);
+      }
+    }
+    &-title {
+      font-family: $font;
+      font-weight: 700;
+      color: $loc !important;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    &-date {
+      color: $C-1;
+      font-size: 0.6rem;
+      font-family: $font;
+      text-transform: uppercase;
+      border-right: 2px solid $loc;
+      margin: 0 1rem 0 0;
+      padding: 0 1rem 0 0;
+      font-weight: 700;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.7rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 0.8rem;
+      }
+    }
+    &-name {
+      color: $C-1;
+      font-size: 0.6rem;
+      font-family: $font;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 0.7rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 0.8rem;
+      }
+    }
+    &-text {
+      color: $C-1;
+      font-size: 1rem;
+      font-family: $font;
+    }
+    &-icon {
+      color: $C-1;
+      font-size: 0.7rem;
+      margin: 0px 6px 0 0;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        margin: -2px 6px 0 0;
+        font-size: 0.8rem;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        font-size: 1rem;
+        margin: -5px 6px 0 0;
+      }
+    }
+    &-list {
+      margin: 0 0;
+      padding: 0 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 1.2rem 0 0;
+      }
+    }
+    &-social {
+      &--fb {
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: $fb;
+      }
+      &--tw {
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: $tw;
+      }
+      &--ins {
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: $ins;
+      }
+      &--in {
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: $in;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex !important;
+    justify-content: flex-end;
+    right: 6%;
+    bottom: 3%;
+    .slick-active button {
+      border-bottom: 1px solid $num;
+    }
+    li {
+      button {
+        border-bottom: 1px solid $white;
+        font-size: 1rem;
+        color: $white;
+        margin: 0 0 0 -1px;
+        padding: 0 0 8px 0;
+        &::before {
+          position: absolute;
+          content: "";
+        }
+
+        //   min-width: 568px;
+        @include iphn-screen {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

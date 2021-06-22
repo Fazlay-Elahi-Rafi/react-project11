@@ -1,0 +1,157 @@
+.featured {
+  margin: 0 0 8rem 0;
+  overflow: hidden;
+  &__title {
+    font-family: $font;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $loc;
+    margin: 0 0 4rem 0;
+    text-transform: uppercase;
+    position: relative;
+
+    // min-width: 768px;
+    @include md-screen {
+      font-size: 3rem;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: $num;
+      width: 4rem;
+      height: 3px;
+
+      top: 2rem;
+      left: 27rem;
+
+      // max-width: 575px;
+      @include xs-screen {
+        position: relative;
+      }
+
+      // min-width: 768px;
+      @include md-screen {
+        top: 2.5rem;
+        left: 32rem;
+      }
+    }
+  }
+  &__item {
+    margin: 0 0;
+
+    // min-width: 768px;
+    @include md-screen {
+      margin: 0 2px 0 1rem;
+    }
+    &:hover &-img img {
+      transform: scale(1.1);
+      opacity: 0.6;
+      transition: all 0.3s ease-in;
+    }
+    &-text {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-family: $font;
+      color: $loc;
+      margin: 0 0 0.8rem 0;
+    }
+    &-name {
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: $font;
+      font-weight: 700;
+      display: block;
+      color: $loc !important;
+      margin: 0 0 0.5rem 0;
+    }
+    &-price {
+      font-size: 1.3rem;
+      font-family: $font3;
+      color: $icon;
+    }
+
+    &-img {
+      overflow: hidden;
+      position: relative;
+      background: rgba(0, 0, 0, 0.7);
+      img {
+        transition: all 0.3s ease-in;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    &-link {
+      color: $white !important;
+      font-family: $font;
+      background: $loc !important;
+      display: inherit !important;
+      box-shadow: none !important;
+      outline: 0 !important;
+      font-size: 0.8rem !important;
+      padding: 6px 2rem !important;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in !important;
+      margin: auto;
+
+      // min-width: 768px;
+      @include md-screen {
+        font-size: 0.9rem !important;
+        padding: 8px 3rem !important;
+      }
+      &:hover {
+        transition: all 0.3s ease-in !important;
+        background: transparent !important;
+        border: 1px solid $loc;
+        color: $loc !important;
+      }
+    }
+  }
+  .slick-slider {
+    margin: 0 0;
+    .slick-track {
+      padding: 0 0 4rem 0;
+    }
+    .slick-list {
+      margin: 0 0 0 0rem;
+
+      //   min-width: 768px;
+      @include md-screen {
+        margin: 0 0 0 -7px;
+      }
+
+      //   min-width: 992px;
+      @include lg-screen {
+        margin: 0 0 0 -12px;
+      }
+    }
+    .slick-prev {
+      left: -16px !important;
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        left: -25px !important;
+      }
+    }
+    .slick-next {
+      right: -14px !important;
+
+      //   min-width: 1200px;
+      @include xl-screen {
+        right: -25px !important;
+      }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: $loc !important;
+      font-size: 1.6rem;
+    }
+    .slick-dots {
+      bottom: 0;
+      li button:before {
+        color: rgb(238, 117, 96) !important;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

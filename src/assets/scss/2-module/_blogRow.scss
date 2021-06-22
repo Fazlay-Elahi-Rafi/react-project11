@@ -1,0 +1,104 @@
+.body {
+  &__right {
+    background: #f5f3f0;
+    &-title {
+      font-family: $font2;
+      font-size: 1.3rem !important;
+      letter-spacing: 2px;
+      color: #505050 !important;
+      text-transform: uppercase;
+      margin: 0 0 1rem 6px;
+    }
+    &-inp {
+      box-shadow: none !important;
+      outline: 0 !important;
+      border-radius: 100px !important;
+      color: #c4c4c4 !important;
+      border: 1px solid #e5e5e5 !important;
+      background: $white;
+      padding: 8px 0 8px 1.5rem !important;
+      &:focus {
+        border: 1px solid #ee7560 !important;
+      }
+    }
+    &-drop {
+      box-shadow: none !important;
+      outline: 0 !important;
+      color: #626262 !important;
+      font-family: $font;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      &--item {
+        color: #626262 !important;
+        font-family: $font;
+        font-size: 1rem;
+        text-transform: capitalize;
+        background: transparent !important;
+        letter-spacing: 0.5px;
+        margin: 10px 0;
+      }
+    }
+    &-list {
+      margin: 0 0;
+      padding: 0 0;
+      li {
+        list-style: none;
+        margin: 12px 12px;
+        a {
+          position: relative;
+          text-decoration: none;
+          color: #626262 !important;
+          font-family: $font;
+          font-size: 1rem;
+          letter-spacing: 0.5px;
+          transition: all 0.4s ease !important;
+          &:hover {
+            &::before {
+              width: 20px;
+            }
+            padding-left: 23px;
+            transition: all 0.4s ease;
+            color: #ff5858 !important;
+          }
+          &::before {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: #ff5858;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+    &-tag {
+      &--list {
+        margin: 0 0;
+        padding: 0 0;
+        li {
+          list-style: none;
+          display: initial;
+          button {
+            margin: 0 0 12px 8px;
+            box-shadow: none !important;
+            outline: 0 !important;
+            border: 1px solid #d9d9d9 !important;
+            color: #626262 !important;
+            text-transform: capitalize;
+            border-radius: 60px;
+            padding: 5px 15px;
+            font-size: 12px;
+            &:hover {
+              border: 1px solid #ee7560 !important;
+              color: #ee7560 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

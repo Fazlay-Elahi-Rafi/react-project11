@@ -1,0 +1,51 @@
+.subscribe {
+  margin: 0 0 8rem 0;
+  padding: 5rem 0;
+  background: $bg;
+  &__title {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $white;
+    text-transform: capitalize;
+  }
+  &__span {
+    font-size: 1rem;
+    color: $white;
+    font-family: $font;
+  }
+  &__inp {
+    box-shadow: none !important;
+    outline: none !important;
+    background: #3d3c41 !important;
+    color: $icon !important;
+    font-family: $font;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    &:focus {
+      border: 1px solid $icon !important;
+    }
+
+    // min-width: 568px;
+    @include iphn-screen {
+      border-radius: 5px 0px 0px 5px !important;
+    }
+  }
+  &__btn {
+    box-shadow: none !important;
+    outline: none !important;
+    font-family: $font;
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    border-radius: 5px !important;
+    padding: 9px 6.5rem !important;
+    background: $icon !important;
+    color: $white !important;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      padding: 9px 26px !important;
+      border-radius: 0 5px 5px 0 !important;
+    }
+  }
+}

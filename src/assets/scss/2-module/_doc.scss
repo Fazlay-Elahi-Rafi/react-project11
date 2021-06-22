@@ -1,0 +1,136 @@
+.doc {
+  margin: 0 0 8rem 0;
+  &__span {
+    font-family: $font;
+    color: $C-1;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 7px;
+  }
+  &__title {
+    font-family: $font;
+    font-weight: 700;
+    margin: 0px 0 1rem 0;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: $loc;
+
+    //   min-width: 568px;
+    @include iphn-screen {
+      font-size: 3.5rem;
+    }
+  }
+  &__text {
+    font-family: $font;
+    text-transform: capitalize;
+    margin: 0 0;
+    color: $text;
+    font-size: 2rem;
+
+    //   min-width: 568px;
+    @include iphn-screen {
+      font-size: 2.5rem;
+    }
+  }
+  &__title2 {
+    font-family: $font;
+    text-transform: capitalize;
+    color: $C-1;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin: 0 0 1rem 0;
+
+    //   min-width: 568px;
+    @include iphn-screen {
+      font-size: 1.3rem;
+    }
+  }
+  &__para {
+    font-family: $font;
+    text-transform: capitalize;
+    color: $C-1;
+    font-size: 0.86rem;
+
+    //   min-width: 568px;
+    @include iphn-screen {
+      font-size: 1rem;
+    }
+  }
+  &__card {
+    border: none !important;
+    &-layer {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    &-off {
+      font-size: 2.3rem;
+      font-family: $font;
+      font-weight: 700;
+      color: $white;
+      text-transform: capitalize;
+
+      //   min-width: 568px;
+      @include iphn-screen {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  &__img {
+    height: 22rem !important;
+  }
+  &__item {
+    position: relative;
+
+    // min-width: 768px;
+    @include md-screen {
+      display: flex;
+    }
+
+    &-one {
+      position: relative;
+      color: $white;
+      background: $icon;
+      padding: 5.8rem 5px;
+    }
+    &-two {
+      position: relative;
+      color: $white;
+      background: $text;
+      padding: 5.8rem 0px;
+    }
+    &-text {
+      position: relative;
+      z-index: 99999;
+      color: $white;
+      text-transform: capitalize;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 1rem 0 1rem 1rem;
+    }
+    &-disc {
+      font-size: 1rem;
+      position: relative;
+      z-index: 99999;
+      color: $white;
+      text-transform: capitalize;
+      font-family: $font;
+      margin: 0 0 0 1rem;
+    }
+    &-top {
+      margin: 0 0 0 2rem;
+    }
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        color: $white;
+        width: 9rem;
+      }
+    }
+  }
+}

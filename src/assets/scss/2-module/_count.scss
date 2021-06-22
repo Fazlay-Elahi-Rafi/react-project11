@@ -1,0 +1,44 @@
+.count {
+  background-image: url(../../img/count.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 7rem 0;
+  &__layer {
+    background: rgba(0, 20, 20, 0.5);
+    padding: 7rem 0;
+  }
+  &__border {
+    // min-width: 992px;
+    @include lg-screen {
+      border-right: 1px solid $white;
+    }
+  }
+  &__num {
+    color: $white;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 2rem;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      font-size: 2.5rem;
+    }
+
+    // min-width: 768px;
+    @include md-screen {
+      font-size: 3rem;
+    }
+  }
+  &__text {
+    color: $white;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: $font;
+
+    // min-width: 568px;
+    @include iphn-screen {
+      font-size: 1rem;
+    }
+  }
+}

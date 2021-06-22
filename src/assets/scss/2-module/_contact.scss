@@ -1,0 +1,91 @@
+.contact {
+  margin: 6rem 0;
+  &__list {
+    margin: 0 0 10px 0;
+    padding: 0 0;
+    li {
+      list-style: none;
+    }
+  }
+  &__place {
+    margin: 0 0 0.9rem 0;
+    font-family: $font2;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    color: #626262;
+    text-transform: uppercase;
+  }
+  &__comp {
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.2px;
+    font-family: $font;
+    color: #626262;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  &__contact {
+    margin: 0 0 0.9rem 0;
+    font-family: $font;
+    font-size: 0.9rem;
+    line-height: 1.14rem;
+    letter-spacing: 0.2px;
+    color: #6d6d6d;
+  }
+  &__icon {
+    font-size: 1rem;
+    color: #6d6d6d;
+    margin: 0 8px 0 0;
+  }
+  &__social {
+    &-list {
+      margin: 0 0;
+      padding: 0 0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+    }
+    &-link {
+      text-decoration: none;
+      color: #6d6d6d !important;
+      font-size: 1.09rem;
+      transition: all 0.2s ease-in;
+      &:hover {
+        transition: all 0.2s ease-in;
+        color: rgb(250, 97, 70) !important;
+      }
+    }
+  }
+  &__form {
+    &-inp {
+      background: #f1f1f1 !important;
+      font-size: 1rem !important;
+      padding: 0.6rem 1.5rem !important;
+      font-family: $font;
+      border-color: #f1f1f1 !important;
+      box-shadow: none !important;
+      color: $icon !important;
+      &:focus {
+        border-color: $icon !important;
+      }
+    }
+    &-btn {
+      padding: 11px 40px 9px !important;
+      border: none !important;
+      font-family: $font;
+      font-size: 14px !important;
+      line-height: 25px !important;
+      border-radius: 0 0 8px 8px !important;
+      color: #fff !important;
+      text-transform: uppercase;
+      transition: all 0.4s ease !important;
+      box-shadow: 0 6px 15px 0 rgb(36 36 38 / 10%) !important;
+      background-color: $icon !important;
+    }
+  }
+}
