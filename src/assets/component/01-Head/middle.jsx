@@ -27,9 +27,9 @@ export default function Middle() {
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-12 col-md-2 text-start d-flex d-md-block justify-content-between align-items-center">
-            <a href="#">
+            <Link to='/' href="#">
               <img className="img-fluid w-50" src={logo} alt="logo" />
-            </a>
+            </Link>
             <div className="d-flex d-md-none">
               <a href="#" className="bottom__cart">
                 <FaShoppingCart className="bottom__cart-icon" />

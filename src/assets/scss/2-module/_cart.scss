@@ -1,6 +1,11 @@
 .cart {
-  margin: 0 0 8rem 0;
+  margin: 0 0 6rem 0;
   overflow: hidden;
+
+  // min-width: 992px;
+  @include lg-screen {
+    margin: 0 0 8rem 0;
+  }
   &__title {
     font-family: $font;
     font-size: 2.5rem;

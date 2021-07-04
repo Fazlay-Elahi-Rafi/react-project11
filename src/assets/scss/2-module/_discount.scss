@@ -1,5 +1,10 @@
 .disc {
   margin: 0 0 7rem 0;
+
+  // min-width: 992px;
+  @include lg-screen {
+    margin: 0 0 9rem 0;
+  }
   &__layer {
     display: flex;
     align-items: center;
