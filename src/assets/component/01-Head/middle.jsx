@@ -27,16 +27,16 @@ export default function Middle() {
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-12 col-md-2 text-start d-flex d-md-block justify-content-between align-items-center">
-            <Link to='/' href="#">
+            <Link to="/" href="#">
               <img className="img-fluid w-50" src={logo} alt="logo" />
             </Link>
             <div className="d-flex d-md-none">
-              <a href="#" className="bottom__cart">
+              <Link to="/cart" className="bottom__cart">
                 <FaShoppingCart className="bottom__cart-icon" />
                 <div className="bottom__cart-num">
-                  <span className="bottom__cart-span">0</span>
+                  <span className="bottom__cart-span">{cartCount}</span>
                 </div>
-              </a>
+              </Link>
               <div className="">
                 <FullPage />
               </div>
