@@ -1,0 +1,66 @@
+.singleItem {
+  &__body {
+    margin: 8rem 0;
+    &--text {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-family: $font;
+      color: $loc;
+      margin: 0 0 0.8rem 0;
+    }
+    &--name {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-family: $font;
+      font-weight: 700;
+      color: $loc;
+      margin: 0 0 0.5rem 0;
+    }
+    &--price {
+      font-size: 1.3rem;
+      font-family: $font3;
+      color: $icon;
+    }
+    &--list {
+      margin: 12px 0 7px 0;
+      padding: 0 0 0 1rem;
+      li {
+        font-size: 1rem;
+        font-family: $font;
+        color: $loc;
+      }
+    }
+    &--btn {
+      color: $white !important;
+      display: inherit !important;
+      box-shadow: none !important;
+      background: $icon !important;
+      border-radius: 50px !important;
+      padding: 7px 2rem !important;
+      font-family: $font;
+    }
+  }
+  &__error {
+    text-align: center;
+    margin: 10rem 0;
+    &-title {
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      font-family: $font;
+      color: $bg;
+      font-weight: 700;
+    }
+    &-btn {
+      color: $white !important;
+      box-shadow: none !important;
+      background: $num !important;
+      border-radius: 50px !important;
+      padding: 9px 3.5rem !important;
+      font-family: $font;
+      text-transform: capitalize;
+      font-weight: 700 !important;
+      font-size: 0.9rem !important;
+      margin: 1rem 0 0 0;
+    }
+  }
+}

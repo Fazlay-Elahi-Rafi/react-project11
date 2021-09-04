@@ -26,7 +26,7 @@ const Items1 = ({ product }) => {
         <div className="cart__item">
           <div className="card">
             <div className="cart__item-icon">
-              <Link to={`/product/${product.id}`}>
+              <Link to={`/single/${product.id}`}>
                 <button
                   onClick={() => myFun2(product)}
                   className="cart__item-icon--link btn"

@@ -13,6 +13,7 @@ import Cart from "./assets/pages/cart";
 import Blog from "./assets/pages/blog";
 import Contact from "./assets/pages/contact";
 import Product from "./assets/pages/product";
+import Single from "./assets/component/05-Cart/SingleItem";
 import Error from "./assets/pages/error";
 
 // Footer
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route path="/product" component={Product} />
+          <Route exact path="/single/:id" component={Single} />
           <Route path="*" component={Error} />
         </Switch>
         <Subscribe />

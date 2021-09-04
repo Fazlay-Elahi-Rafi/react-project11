@@ -1,21 +1,11 @@
 import React from "react";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
-
-import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Add from "./add";
-
 import Products from "./Products";
-import SingleItem from "./SingleItem";
 
 export default function Main() {
-  const myState = useSelector((state) => state.shop.currentItem);
   return (
     <section className="cart">
       <div className="container">
@@ -28,16 +18,7 @@ export default function Main() {
           <div className="col-12 col-md-12 col-lg-9 col-xl-5 mb-5 mb-xl-0 m-auto m-xl-0">
             <Add />
           </div>
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Products} />
-              {!myState ? (
-                <Redirect to="/" />
-              ) : (
-                <Route exact path="/product/:id" component={SingleItem} />
-              )}
-            </Switch>
-          </Router>
+          <Route exact path="/" component={Products} />
         </div>
       </div>
     </section>
